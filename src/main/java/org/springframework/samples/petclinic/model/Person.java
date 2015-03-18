@@ -36,6 +36,8 @@ public class Person extends BaseEntity {
     @NotEmpty
     protected String lastName;
 
+    protected String address;
+    
     public String getFirstName() {
         return this.firstName;
     }
@@ -52,5 +54,12 @@ public class Person extends BaseEntity {
         this.lastName = lastName;
     }
 
+    public String getAddress() {
+        return this.address;
+    }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
 }
